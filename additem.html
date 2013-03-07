@@ -24,7 +24,7 @@
         
         <!-- Form data-->
         
-        <form action = "#" method="post">
+        <form action = "#" method="post" name="reminderForm">
         	<fieldset>
 	        	<legend>Set Reminder</legend>
 	        	<ul>
@@ -36,7 +36,7 @@
 	        			</select>
 	        		</li>
 	        		<br />
-	        		<li><label for="remindTitle">Reminder Name:</label><input type="text" id="remindTitle" /></li>
+	        		<li><label for="remindTitle">Name:</label><input type="text" id="remindTitle" /></li>
 	        		<br />
 	        		<li><label for="due">Due Date:</label><input type="date" id="due" /></li>
 	        		<br />
@@ -50,12 +50,19 @@
 	        		<li><label for="remindTitle">A few or several recurrences in the next month?</label>
 	        		<br />
 	        		<input type="range" id="recurrence" min="0" max="10" value="0" name="recurrence"/>
+	        		<li>
+	        			<label for="description">Description:</label>
+	        			<br />
+	        			<textarea id="detailDescription" form="reminderForm"></textarea>
+	        		</li>
+	        		<input type="hidden" value="someData" />
 	        	</ul>
         	</fieldset>
+        	<input type="submit" value="Submit" />
         </form>
-        
+        <br />
+        <a href="#">Clear Storage</a>
+        <br />
+        <a href="#">Display Data</a>
  	</body>
- 
- 
- 
  </html>

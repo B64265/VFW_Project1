@@ -32,7 +32,7 @@
 	        	<ul>
 	        		<!-- Select / Option -->
 	        		<li>
-	        			<label for="remindTitle">Reminder Category:</label>
+	        			<label for="category">Reminder Category:</label>
 	        			<select id="category">
 		        			<option value="Personal">Personal</option>
 		        			<option value="Work">Work</option>
@@ -60,7 +60,7 @@
 	        		
 	        		<!-- Range Selection -->
 	        		<li>
-		        		<label for="remindTitle">A few or several recurrences in the next month?</label>
+		        		<label for="recurrence">A few or several recurrences in the next month?</label>
 		        		<br />
 		        		<input type="range" id="recurrence" min="0" max="10" value="0" name="recurrence" />
 	        		</li>
@@ -68,7 +68,7 @@
 	        		<li>
 	        			<label for="description">Description:</label>
 	        			<br />
-	        			<textarea id="detailDescription" form="reminderForm"></textarea>
+	        			<textarea id="description" form="reminderForm"></textarea>
 	        		</li>
 	        		<!-- Hidden input -->
 	        		<input type="hidden" value="someData" />

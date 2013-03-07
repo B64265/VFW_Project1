@@ -28,6 +28,7 @@
         	<fieldset>
 	        	<legend>Set Reminder</legend>
 	        	<ul>
+	        		<!-- Select / Option -->
 	        		<li><label for="remindTitle">Reminder Category:</label>
 	        			<select id="category">
 		        			<option value="Personal">Personal</option>
@@ -36,10 +37,16 @@
 	        			</select>
 	        		</li>
 	        		<br />
+	        		
+	        		<!-- Label and text field -->
 	        		<li><label for="remindTitle">Name:</label><input type="text" id="remindTitle" /></li>
 	        		<br />
+	        		
+	        		<!-- Date -->
 	        		<li><label for="due">Due Date:</label><input type="date" id="due" /></li>
 	        		<br />
+	        		
+	        		<!-- Radio Buttons -->
 	        		<li>What is the Priority of this event?</li>
 		        		<ul>
 			        		<li><label for="hipri">High Priority</label><input type="radio" name="priority" value="high" id="hipri" /></li>
@@ -47,20 +54,27 @@
 			        		<li><label for="lopri">Low Priority</label><input type="radio" name="priority" value="low" id="lopri" /></li>
 		        		</ul>
 	        		<br />
+	        		
+	        		<!-- Range Selection -->
 	        		<li><label for="remindTitle">A few or several recurrences in the next month?</label>
 	        		<br />
-	        		<input type="range" id="recurrence" min="0" max="10" value="0" name="recurrence"/>
+	        		<input type="range" id="recurrence" min="0" max="10" value="0" name="recurrence" />
+	        		
+	        		<!-- Text Area -->
 	        		<li>
 	        			<label for="description">Description:</label>
 	        			<br />
 	        			<textarea id="detailDescription" form="reminderForm"></textarea>
 	        		</li>
+	        		<!-- Hidden input -->
 	        		<input type="hidden" value="someData" />
 	        	</ul>
         	</fieldset>
+        	<!-- Submit Button -->
         	<input type="submit" value="Submit" />
         </form>
         <br />
+        <!-- Clear and Display Data Links -->
         <a href="#">Clear Storage</a>
         <br />
         <a href="#">Display Data</a>
